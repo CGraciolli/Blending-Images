@@ -1,4 +1,4 @@
-# Blending-Images
+# Blending Images
 
 ## Objective
 We want to blend images, so their edges are smoother.
