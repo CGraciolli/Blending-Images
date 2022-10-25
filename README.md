@@ -26,7 +26,7 @@ Using the same strategy as before, we harmonize each RGB matrix using **process_
 ![rgb](https://user-images.githubusercontent.com/112963325/197754402-260603e0-77c2-4eb7-8995-512cb4f73675.png)
 
 
-3.Now we are ready to smooth any given image. We use **Pillow** to open the image and extract its RGBA matrix. 
+3. Now we are ready to smooth any given image. We use **Pillow** to open the image and extract its RGBA matrix. 
 We divide the RGBA matrix in four separated matrixes and use **process_matrix** in each. 
 Then we combine this matrix in a RGBA matrix that **Pillow** can use to generate a new image.  
 ![dog_comp](https://user-images.githubusercontent.com/112963325/197754602-3b284bff-f849-4281-84c5-4db0196aaf2e.png)
