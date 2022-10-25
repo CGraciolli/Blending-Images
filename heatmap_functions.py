@@ -22,7 +22,7 @@ def create_image(dim):
     ##each position has a randomly picked number between 0 and 9
     matrix = create_random_matrix(dim)
     x=pd.DataFrame(matrix)
-    sns.heatmap(x, annot=False) ## annot show the number or not
+    sns.heatmap(x, annot=False, vmin=0, vmax=10) ## annot show the number or not
     plt.title("Original Heatmap")
     plt.axis("off")
     plt.show()
@@ -51,7 +51,7 @@ def k_times_blended_heatmap(dim, k=1):
     for _ in range(k):
         image_matrix = create_blended_image(image_matrix)
     y = pd.DataFrame(image_matrix)
-    sns.heatmap(y, annot=False)
+    sns.heatmap(y, annot=False, vmin=0, vmax=10)
     plt.title(f"Heatmap blended {k} time(s)")
     plt.axis("off")
     plt.show()
