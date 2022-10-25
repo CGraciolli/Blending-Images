@@ -5,7 +5,8 @@ We want to blend images, so their edges are smoother.
 
 ## Strategy
 In order to do so, we want to be able to harmonize each pixel to the other pixels surrounding it.  
-(Example with pixel images)
+![pixel_comp](https://user-images.githubusercontent.com/112963325/197756584-1d3dd28e-5365-4c41-a0a4-d47e32042b0c.png)
+
 
 ## Implementation
 * First we define a function **process_matrix** that is given a matrix with numerical values, and returns a new matrix.
