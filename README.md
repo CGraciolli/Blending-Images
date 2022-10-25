@@ -11,7 +11,7 @@ In order to do so, we want to be able to harmonize each pixel to the other pixel
 ## Implementation
 * First we define a function **process_matrix** that is given a matrix with numerical values, and returns a new matrix.
 The new matrix has in the position (i, j) the average of the element (i, j) of the original matrix and it's neighbors.  
-Like in the image above, the original matrix has 5 in the position (1, 1) and its neighbors have values 2 and 2.   
+Like in the image above, the original matrix has 5 in the position (0, 0) and its neighbors have values 2 and 2.   
 So the new value will be (5+2+2)/3 = 3
   
 * Now we use this matrix to harmozine pixels to the ones surrounding it.  We implement it in three different ways:
