@@ -1,7 +1,7 @@
 # Blending Images
 
 ## Objective
-We want to blend images, so their edges are smoother.
+We want to blend a image, so its edges are smoother.
 
 ## Strategy
 In order to do so, we want to be able to harmonize each pixel to the other pixels surrounding it.  
