@@ -47,7 +47,6 @@ def process_element(matrix:List[List[int]], index_row:int, index_column:int) -> 
     returns the average between that element and its neighbors
     """
     neighbors = get_neighbors(matrix, index_row, index_column)
-    print(neighbors)
     return average(neighbors)
 
 def process_matrix(matrix:List[List[int]]) -> List[List[int]]:
