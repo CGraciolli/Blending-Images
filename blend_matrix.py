@@ -7,6 +7,7 @@ def average(nums:List[int]) -> float:
     """
     return sum(nums)/len(nums)
 
+
 def get_neighbors_indexes(matrix:List[List[float]], index_row:int, index_column:int) -> Set[Tuple[int]]:
     """
     recives a matrix with numerical values and two integers representing a position in the matrix
@@ -56,12 +57,16 @@ def process_matrix(matrix:List[List[float]]) -> List[List[float]]:
     the elements in the new matrix are the average between 
     the element of the same position in the old matrix and its neighbors
     """
-    new_matrix = []
-    for row_index in range(len(matrix)):
-        new_row = []
-        for column_index in range(len(matrix[0])):
-            new_element = process_element(matrix, row_index, column_index)
-            new_row.append(new_element)
-        new_matrix.append(new_row)
-    return new_matrix
+    try:
+        new_matrix = []
+        for row_index in range(len(matrix)):
+            new_row = []
+            for column_index in range(len(matrix[0])):
+                new_element = process_element(matrix, row_index, column_index)
+                new_row.append(new_element)
+            new_matrix.append(new_row)
+        return new_matrix
+    except TypeError:
+        print("The matrix must have only numerical values.")
+
 
